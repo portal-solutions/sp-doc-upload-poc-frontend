@@ -16,6 +16,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { FilePond, registerPlugin } from 'react-filepond';
 import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size';
+import * as files from '../utils/files.util';
 import * as sharepointService from '../utils/sharepoint.service';
 
 registerPlugin(FilePondPluginFileValidateSize);
@@ -46,7 +47,7 @@ const FileDropzone = ({ spContext, token }) => (
       maxFileSize="4MB"
       server={{
         process: async (fieldName, file, metadata, load, error, progress) => {
-          const md5 = crypto.MD5(new FileReader().readAsArrayBuffer(file));
+          const md5 = crypto.MD5(await files.readAsBinaryString(file));
           const extension = path.extname(file.name);
           const basename = file.name.replace(extension, '');
 
