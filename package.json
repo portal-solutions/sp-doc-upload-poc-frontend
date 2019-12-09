@@ -1,18 +1,15 @@
 {
   "author": "Greg Baker <gregory.j.baker@hrsdc-rhdcc.gc.ca>",
   "private": true,
-
   "name": "sp-doc-upload-poc",
   "version": "0.0.0",
   "license": "MIT",
-
   "scripts": {
     "start": "react-scripts --inspect start",
     "test": "react-scripts --inspect test",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
-
   "eslintConfig": {
     "env": {
       "browser": true,
@@ -25,14 +22,12 @@
       "plugin:prettier/recommended"
     ]
   },
-
   "prettier": {
     "arrowParens": "always",
     "printWidth": 120,
     "singleQuote": true,
     "trailingComma": "none"
   },
-
   "browserslist": {
     "production": [
       ">0.2%",
@@ -46,7 +41,6 @@
       "last 1 safari version"
     ]
   },
-
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -68,7 +62,6 @@
     "react-router-dom": "^5.1.2",
     "reactstrap": "^8.0.1"
   },
-
   "devDependencies": {
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.4.0",

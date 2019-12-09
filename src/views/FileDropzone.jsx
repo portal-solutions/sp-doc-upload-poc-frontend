@@ -10,7 +10,6 @@
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import crypto from 'crypto-js';
-import 'filepond/dist/filepond.min.css';
 import path from 'path';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -18,6 +17,8 @@ import { FilePond, registerPlugin } from 'react-filepond';
 import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size';
 import * as files from '../utils/files.util';
 import * as sharepointService from '../utils/sharepoint.service';
+
+import 'filepond/dist/filepond.min.css';
 
 registerPlugin(FilePondPluginFileValidateSize);
 
